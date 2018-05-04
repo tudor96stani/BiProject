@@ -1,0 +1,2999 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="5/4/2018 8:58:26 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="MACBOOK-PC"
+  DTS:CreatorName="Macbook-PC\Macbook"
+  DTS:DTSID="{7B46A6F2-848E-4FB7-AF11-EDC27574DC03}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.3002.92"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="20"
+  DTS:VersionGUID="{ED375FA2-4AD6-48E6-94A0-B5E435DD22CE}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CountriesCSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{6E8BE095-D98A-47CC-914B-CD474EDB5ED0}"
+      DTS:ObjectName="CountriesCSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Macbook\Documents\School\BI\Countries-Continents-csv.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Continent"
+              DTS:DTSID="{F11ED9FA-FB6E-4A4E-9420-B14375A04679}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{9A63F3C9-D1C5-44D2-B7D5-330BFB53A4FD}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column"
+              DTS:DTSID="{00055875-C1A0-4FBC-B3DC-D7C741B17BD5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column2"
+              DTS:DTSID="{9D11EB37-8D23-40D8-BD3A-373BEBF84391}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column3"
+              DTS:DTSID="{D0E016EA-750E-4492-A507-1A9B61D9589A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column4"
+              DTS:DTSID="{B86C9C8E-6366-41B4-AF73-7A29C1869AF8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column5"
+              DTS:DTSID="{8988F4E1-893B-44AE-9865-AC2FAF0A821D}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column6"
+              DTS:DTSID="{8D419E7D-65C7-4F1F-A71F-BF0DAE7DCD40}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column7"
+              DTS:DTSID="{DBD9D638-5922-4022-A93A-03E758556048}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column8"
+              DTS:DTSID="{578AB8C3-57C6-4424-AC91-E570B4A398AE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Column9"
+              DTS:DTSID="{18FA7DE4-5D2D-47A7-8BA6-15195553D991}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{DE8CCFEB-1D91-4CA2-947D-30AED106528B}"
+      DTS:ObjectName="MACBOOK-PC\SQLEXPRESS.bi_project">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=MACBOOK-PC\SQLEXPRESS;Initial Catalog=bi_project;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project 1]"
+      DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+      DTS:DTSID="{896655C2-247F-4EBE-B55A-8274FD593F47}"
+      DTS:ObjectName="MACBOOK-PC\SQLEXPRESS.bi_project 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=MACBOOK-PC\SQLEXPRESS;Initial Catalog=bi_project;Integrated Security=True;Application Name=SSIS-Package-{896655C2-247F-4EBE-B55A-8274FD593F47}MACBOOK-PC\SQLEXPRESS.bi_project 1;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[WineReviewsCSV]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{7833E21E-2E0B-4384-8799-828459E5B1F9}"
+      DTS:ObjectName="WineReviewsCSV">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\Macbook\Documents\School\BI\winemag-data-130k-v2.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Id"
+              DTS:DTSID="{24F49FF2-3123-48FB-8469-82E6F2BBA264}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="country"
+              DTS:DTSID="{44C5B190-A080-4931-B0F6-F29157AF4C0A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="description"
+              DTS:DTSID="{45B923F0-FB0E-4929-9F32-857748CBA84A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="designation"
+              DTS:DTSID="{F6CC7CE0-E56A-471A-ADF5-53313B0D1325}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="points"
+              DTS:DTSID="{0BA020BD-6A04-4669-A10F-8D16A9F9F377}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="price"
+              DTS:DTSID="{16645C59-9377-42FB-A7AB-905291705E65}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="province"
+              DTS:DTSID="{830B061C-F977-43CC-9C2F-A0C88A3DBD2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="region_1"
+              DTS:DTSID="{4D229ED6-4FD3-4D95-9982-F6517C0DE816}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="region_2"
+              DTS:DTSID="{87ADC4AE-41FF-4B4B-BECC-A2C771FB6989}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="taster_name"
+              DTS:DTSID="{A8B9A4B5-81A9-459B-9162-44ADE8719599}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="taster_twitter_handle"
+              DTS:DTSID="{0023AEE5-8C18-4B85-99B3-0A0F6B501BF7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="title"
+              DTS:DTSID="{997E8FD3-B87C-48D5-A5BF-67AAE64D2873}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="variety"
+              DTS:DTSID="{39E4203B-49D1-4967-97FB-001EFDFA1D38}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="302"
+              DTS:TextQualified="True"
+              DTS:ObjectName="winery"
+              DTS:DTSID="{4147DCD9-6AF0-4308-8A77-81F1BF9B30E4}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{4B77C693-3B0D-4851-9589-DACC26D6ED26}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\LocationDim table"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="LocationDim table"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[LocationDim]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\LocationDim table.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project]"
+                  connectionManagerRefId="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input].Columns[country]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="country"
+                      externalMetadataColumnId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input].ExternalColumns[country]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[country]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input].Columns[province]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="province"
+                      externalMetadataColumnId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input].ExternalColumns[province]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[province]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input].Columns[region_1]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="region_1"
+                      externalMetadataColumnId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input].ExternalColumns[region]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[region_1]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input].ExternalColumns[LocationId]"
+                      dataType="i4"
+                      name="LocationId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input].ExternalColumns[country]"
+                      codePage="1252"
+                      dataType="text"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input].ExternalColumns[province]"
+                      codePage="1252"
+                      dataType="text"
+                      name="province" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input].ExternalColumns[region]"
+                      codePage="1252"
+                      dataType="text"
+                      name="region" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input].ExternalColumns[continent]"
+                      codePage="1252"
+                      dataType="text"
+                      name="continent" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\LocationDim table.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\LocationDim table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\LocationDim table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\LocationDim table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\LocationDim table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 1]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 3]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 3"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 2]"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 2"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 4]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 4"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\ReviewerDim table"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="ReviewerDim table"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[ReviewerDim]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\ReviewerDim table.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project]"
+                  connectionManagerRefId="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\ReviewerDim table.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\ReviewerDim table.Inputs[OLE DB Destination Input].Columns[taster_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="taster_name"
+                      externalMetadataColumnId="Package\Data Flow Task\ReviewerDim table.Inputs[OLE DB Destination Input].ExternalColumns[taster_name]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[taster_name]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\ReviewerDim table.Inputs[OLE DB Destination Input].Columns[taster_twitter_handle]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="taster_twitter_handle"
+                      externalMetadataColumnId="Package\Data Flow Task\ReviewerDim table.Inputs[OLE DB Destination Input].ExternalColumns[taster_twitter_handle]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[taster_twitter_handle]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ReviewerDim table.Inputs[OLE DB Destination Input].ExternalColumns[ReviewerId]"
+                      dataType="i4"
+                      name="ReviewerId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ReviewerDim table.Inputs[OLE DB Destination Input].ExternalColumns[taster_name]"
+                      codePage="1252"
+                      dataType="text"
+                      name="taster_name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\ReviewerDim table.Inputs[OLE DB Destination Input].ExternalColumns[taster_twitter_handle]"
+                      codePage="1252"
+                      dataType="text"
+                      name="taster_twitter_handle" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\ReviewerDim table.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\ReviewerDim table.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\ReviewerDim table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ReviewerDim table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\ReviewerDim table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\ReviewerDim table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\WineDim table"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="WineDim table"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[WineDim]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\WineDim table.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project]"
+                  connectionManagerRefId="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input].Columns[description]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="description"
+                      externalMetadataColumnId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input].ExternalColumns[description]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[description]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input].Columns[designation]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="designation"
+                      externalMetadataColumnId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input].ExternalColumns[designation]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[designation]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input].Columns[variety]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="variety"
+                      externalMetadataColumnId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input].ExternalColumns[variety]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[variety]" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input].Columns[winery]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="winery"
+                      externalMetadataColumnId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input].ExternalColumns[winery]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[winery]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input].ExternalColumns[WineId]"
+                      dataType="i4"
+                      name="WineId" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input].ExternalColumns[description]"
+                      codePage="1252"
+                      dataType="text"
+                      name="description" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input].ExternalColumns[designation]"
+                      codePage="1252"
+                      dataType="text"
+                      name="designation" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input].ExternalColumns[variety]"
+                      codePage="1252"
+                      dataType="text"
+                      name="variety" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input].ExternalColumns[winery]"
+                      codePage="1252"
+                      dataType="text"
+                      name="winery" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\WineDim table.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineDim table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\WineDim table.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineDim table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\WineDim table.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\WineReviewsDataSet table"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="WineReviewsDataSet table"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[WineReviewsDataSet]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\WineReviewsDataSet table.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project]"
+                  connectionManagerRefId="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[Id]"
+                      name="Id"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[country]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[country]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[country]"
+                      name="country"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[description]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[description]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[description]"
+                      name="description"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[designation]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[designation]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[designation]"
+                      name="designation"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[points]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[points]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[points]"
+                      name="points"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[price]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[price]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[price]"
+                      name="price"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[province]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[province]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[province]"
+                      name="province"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[region_1]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[region_1]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[region_1]"
+                      name="region_1"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[taster_name]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[taster_name]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[taster_name]"
+                      name="taster_name"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[taster_twitter_handle]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[taster_twitter_handle]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[taster_twitter_handle]"
+                      name="taster_twitter_handle"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[title]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[title]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[title]"
+                      name="title"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[variety]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[variety]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[variety]"
+                      name="variety"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[winery]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[winery]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[winery]"
+                      name="winery"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[date]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[date]"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].Columns[date]"
+                      name="date"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[country]"
+                      codePage="1252"
+                      dataType="text"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[description]"
+                      codePage="1252"
+                      dataType="text"
+                      name="description" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[designation]"
+                      codePage="1252"
+                      dataType="text"
+                      name="designation" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[points]"
+                      dataType="i4"
+                      name="points" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[price]"
+                      dataType="i4"
+                      name="price" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[province]"
+                      codePage="1252"
+                      dataType="text"
+                      name="province" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[region_1]"
+                      codePage="1252"
+                      dataType="text"
+                      name="region_1" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[region_2]"
+                      codePage="1252"
+                      dataType="text"
+                      name="region_2" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[taster_name]"
+                      codePage="1252"
+                      dataType="text"
+                      name="taster_name" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[taster_twitter_handle]"
+                      codePage="1252"
+                      dataType="text"
+                      name="taster_twitter_handle" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[title]"
+                      codePage="1252"
+                      dataType="text"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[variety]"
+                      codePage="1252"
+                      dataType="text"
+                      name="variety" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[winery]"
+                      codePage="1252"
+                      dataType="text"
+                      name="winery" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output].ExternalColumns[date]"
+                      dataType="dbTimeStamp"
+                      name="date" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[Id]"
+                      name="Id" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[country]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[country]"
+                      name="country" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[description]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[description]"
+                      name="description" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[designation]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[designation]"
+                      name="designation" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[points]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[points]"
+                      name="points" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[price]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[price]"
+                      name="price" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[province]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[province]"
+                      name="province" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[region_1]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[region_1]"
+                      name="region_1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[taster_name]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[taster_name]"
+                      name="taster_name" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[taster_twitter_handle]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[taster_twitter_handle]"
+                      name="taster_twitter_handle" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[title]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[title]"
+                      name="title" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[variety]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[variety]"
+                      name="variety" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[winery]"
+                      codePage="1252"
+                      dataType="text"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[winery]"
+                      name="winery" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[date]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[date]"
+                      name="date" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 1]"
+              endId="Package\Data Flow Task\WineDim table.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 1"
+              startId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 1]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 2]"
+              endId="Package\Data Flow Task\LocationDim table.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 2"
+              startId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 2]" />
+            <path
+              refId="Package\Data Flow Task.Paths[Multicast Output 3]"
+              endId="Package\Data Flow Task\ReviewerDim table.Inputs[OLE DB Destination Input]"
+              name="Multicast Output 3"
+              startId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 3]" />
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\WineReviewsDataSet table.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\DeleteEverything"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{A3660F40-00DB-4629-9BC4-FDCD9826BB8D}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DeleteEverything"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{896655C2-247F-4EBE-B55A-8274FD593F47}"
+          SQLTask:SqlStatementSource="delete from WineReviewsDataSet; delete from CountriesContinents" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{536BE5BA-5522-4D54-BCFA-34C20A630C2F}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{896655C2-247F-4EBE-B55A-8274FD593F47}"
+          SQLTask:IsStoredProc="True"
+          SQLTask:SqlStatementSource="InsertDates" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task 1"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{E236BA04-E48C-4626-9355-FEFFEB16DC1C}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task 1"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{896655C2-247F-4EBE-B55A-8274FD593F47}"
+          SQLTask:SqlStatementSource="update WineReviewsDataSet&#xA;&#x9;set Price = abs(checksum(NewId()) % 3297) + 4 &#xA;&#x9;where price = 0" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task 2"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{869D9F65-F6FE-49D4-BAB2-86F5B8509CD6}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task 2"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2017 RC1; © 2017 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{896655C2-247F-4EBE-B55A-8274FD593F47}"
+          SQLTask:IsStoredProc="True"
+          SQLTask:SqlStatementSource="AddContinents" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Load data"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:Disabled="True"
+      DTS:DTSID="{8D453068-E8D1-4C30-887F-D17EC18CB552}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load data">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load data\ADO NET Destination"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="ADO NET Destination"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">CountriesContinents</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load data\ADO NET Destination.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project 1]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load data\ADO NET Destination.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Continent]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="Continent"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Continent]"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Continent]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination.Inputs[ADO NET Destination Input].Columns[Country]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="Country"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Country]"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Country]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Continent]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="Continent" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination.Inputs[ADO NET Destination Input].ExternalColumns[Country]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="Country" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load data\ADO NET Destination.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Load data\ADO NET Destination.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load data\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load data\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load data\ADO NET Destination.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load data\ADO NET Destination 1"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+              name="ADO NET Destination 1"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="The Destination database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"WineReviewsDataSet"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                  expressionType="Notify"
+                  name="BatchSize">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                  expressionType="Notify"
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                  expressionType="Notify"
+                  name="UseBulkInsertWhenPossible">true</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load data\ADO NET Destination 1.Connections[IDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project 1]"
+                  connectionManagerRefId="Package.ConnectionManagers[MACBOOK-PC\SQLEXPRESS.bi_project 1]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input]"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="ADO NET Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[Id]"
+                      cachedDataType="i4"
+                      cachedName="Id"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[Id]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[Id]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[country]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="country"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[country]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[country]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[description]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="description"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[description]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[description]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[designation]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="designation"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[designation]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[designation]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[points]"
+                      cachedDataType="i4"
+                      cachedName="points"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[points]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[points]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[price]"
+                      cachedDataType="i4"
+                      cachedName="price"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[price]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[price]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[province]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="province"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[province]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[province]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[region_1]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="region_1"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[region_1]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[region_1]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[region_2]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="region_2"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[region_2]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[region_2]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[taster_name]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="taster_name"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[taster_name]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[taster_name]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[taster_twitter_handle]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="taster_twitter_handle"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[taster_twitter_handle]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[taster_twitter_handle]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[title]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="title"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[title]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[title]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[variety]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="variety"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[variety]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[variety]" />
+                    <inputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].Columns[winery]"
+                      cachedCodepage="1252"
+                      cachedDataType="text"
+                      cachedName="winery"
+                      externalMetadataColumnId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[winery]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[winery]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[country]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[description]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="description" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[designation]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="designation" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[points]"
+                      dataType="i4"
+                      name="points" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[price]"
+                      dataType="i4"
+                      name="price" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[province]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="province" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[region_1]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="region_1" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[region_2]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="region_2" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[taster_name]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="taster_name" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[taster_twitter_handle]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="taster_twitter_handle" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[title]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[variety]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="variety" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[winery]"
+                      dataType="wstr"
+                      length="2147483647"
+                      name="winery" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input].ExternalColumns[date]"
+                      dataType="dbTimeStamp"
+                      name="date" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load data\ADO NET Destination 1.Outputs[ADO NET Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="ADO NET Destination Error Output"
+                  synchronousInputId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load data\ADO NET Destination 1.Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load data\ADO NET Destination 1.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load data\ADO NET Destination 1.Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load data\CountriesCSV"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="CountriesCSV"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load data\CountriesCSV.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[CountriesCSV]"
+                  connectionManagerRefId="Package.ConnectionManagers[CountriesCSV]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Continent]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Continent]"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Continent]"
+                      name="Continent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Country]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Country]"
+                      name="Country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column]"
+                      length="50"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column]"
+                      name="Column"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column2]"
+                      length="50"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column2]"
+                      name="Column2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column3]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column3]"
+                      length="50"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column3]"
+                      name="Column3"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column4]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column4]"
+                      length="50"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column4]"
+                      name="Column4"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column5]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column5]"
+                      length="50"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column5]"
+                      name="Column5"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column6]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column6]"
+                      length="50"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column6]"
+                      name="Column6"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column7]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column7]"
+                      length="50"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column7]"
+                      name="Column7"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column8]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column8]"
+                      length="50"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column8]"
+                      name="Column8"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column9]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column9]"
+                      length="50"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].Columns[Column9]"
+                      name="Column9"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Continent]"
+                      codePage="1252"
+                      dataType="text"
+                      name="Continent" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Country]"
+                      codePage="1252"
+                      dataType="text"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column2" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column3" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column4" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column5" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column6]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column6" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column7]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column7" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column8]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column8" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output].ExternalColumns[Column9]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Column9" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load data\CountriesCSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load data\CountriesCSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load data\WineReviews CSV"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="WineReviews CSV"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load data\WineReviews CSV.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[WineReviewsCSV]"
+                  connectionManagerRefId="Package.ConnectionManagers[WineReviewsCSV]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[Id]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[Id]"
+                      name="Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[country]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[country]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[country]"
+                      name="country"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[description]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[description]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[description]"
+                      name="description"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[designation]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[designation]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[designation]"
+                      name="designation"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[points]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[points]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[points]"
+                      name="points"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[price]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[price]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[price]"
+                      name="price"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[province]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[province]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[province]"
+                      name="province"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[region_1]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[region_1]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[region_1]"
+                      name="region_1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[region_2]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[region_2]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[region_2]"
+                      name="region_2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[taster_name]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[taster_name]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[taster_name]"
+                      name="taster_name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[taster_twitter_handle]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[taster_twitter_handle]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[taster_twitter_handle]"
+                      name="taster_twitter_handle"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[title]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[title]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[title]"
+                      name="title"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[variety]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[variety]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[variety]"
+                      name="variety"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[winery]"
+                      codePage="1252"
+                      dataType="text"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[winery]"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].Columns[winery]"
+                      name="winery"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[Id]"
+                      dataType="i4"
+                      name="Id" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[country]"
+                      codePage="1252"
+                      dataType="text"
+                      name="country" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[description]"
+                      codePage="1252"
+                      dataType="text"
+                      name="description" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[designation]"
+                      codePage="1252"
+                      dataType="text"
+                      name="designation" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[points]"
+                      dataType="i4"
+                      name="points" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[price]"
+                      dataType="i4"
+                      name="price" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[province]"
+                      codePage="1252"
+                      dataType="text"
+                      name="province" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[region_1]"
+                      codePage="1252"
+                      dataType="text"
+                      name="region_1" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[region_2]"
+                      codePage="1252"
+                      dataType="text"
+                      name="region_2" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[taster_name]"
+                      codePage="1252"
+                      dataType="text"
+                      name="taster_name" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[taster_twitter_handle]"
+                      codePage="1252"
+                      dataType="text"
+                      name="taster_twitter_handle" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[title]"
+                      codePage="1252"
+                      dataType="text"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[variety]"
+                      codePage="1252"
+                      dataType="text"
+                      name="variety" />
+                    <externalMetadataColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output].ExternalColumns[winery]"
+                      codePage="1252"
+                      dataType="text"
+                      name="winery" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load data.Paths[Flat File Source Output]"
+              endId="Package\Load data\ADO NET Destination.Inputs[ADO NET Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Load data\CountriesCSV.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\Load data.Paths[Flat File Source Output1]"
+              endId="Package\Load data\ADO NET Destination 1.Inputs[ADO NET Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Load data\WineReviews CSV.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{C66DFEC5-A936-4966-9BD0-C5A14F971A0B}"
+      DTS:From="Package\DeleteEverything"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Load data" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{8F5A1D20-7906-412B-B22B-BDF2B9EE9CE1}"
+      DTS:From="Package\Load data"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Execute SQL Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{309806F7-A6DB-493C-93BF-28E91CBE813B}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\Execute SQL Task 1" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
+      DTS:CreationName=""
+      DTS:DTSID="{BBC192BE-2CE4-4F3E-ACB1-B8FD51CD8015}"
+      DTS:From="Package\Execute SQL Task 1"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 3"
+      DTS:To="Package\Data Flow Task" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
+      DTS:CreationName=""
+      DTS:DTSID="{771B204D-09AA-421F-B1BA-FC57E778C6B5}"
+      DTS:From="Package\Data Flow Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 4"
+      DTS:To="Package\Execute SQL Task 2" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="153.333333333334,42.6666666666667"
+          Id="Package\Data Flow Task"
+          TopLeft="187.083330545574,299.433327979048" />
+        <NodeLayout
+          Size="161.333333333334,42.6666666666667"
+          Id="Package\DeleteEverything"
+          TopLeft="44.8958326643333,8.55833318029838" />
+        <NodeLayout
+          Size="165.333333333334,42.6666666666667"
+          Id="Package\Execute SQL Task"
+          TopLeft="72.083332259208,144.299997419715" />
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Execute SQL Task 1"
+          TopLeft="94.9999985843897,213.633329513272" />
+        <NodeLayout
+          Size="128,42.6666666666667"
+          Id="Package\Load data"
+          TopLeft="62.7916658129543,77.5416653784613" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="126.177082571977,51.224999846965">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,26.3166655314962"
+              Start="0,0"
+              End="0,18.8166655314962">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.8166655314962" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="126.791665812954,120.208332045128">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.9583331129203,24.0916653745867"
+              Start="0,0"
+              End="27.9583331129203,16.5916653745867">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,8.04583268729336" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,8.04583268729336"
+                    Point2="0,12.0458326872934"
+                    Point3="4,12.0458326872934" />
+                  <mssgle:LineSegment
+                    End="23.9583331129203,12.0458326872934" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.9583331129203,12.0458326872934"
+                    Point2="27.9583331129203,12.0458326872934"
+                    Point3="27.9583331129203,16.0458326872934" />
+                  <mssgle:LineSegment
+                    End="27.9583331129203,16.5916653745867" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="154.749998925875,186.966664086381">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.5833329918484,26.6666654268904"
+              Start="0,0"
+              End="27.5833329918484,19.1666654268904">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,9.33333271344522" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,9.33333271344522"
+                    Point2="0,13.3333327134452"
+                    Point3="4,13.3333327134452" />
+                  <mssgle:LineSegment
+                    End="23.5833329918484,13.3333327134452" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.5833329918484,13.3333327134452"
+                    Point2="27.5833329918484,13.3333327134452"
+                    Point3="27.5833329918484,17.3333327134452" />
+                  <mssgle:LineSegment
+                    End="27.5833329918484,19.1666654268904" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 3]"
+          TopLeft="182.333331917723,256.299996179939">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="81.4166652945181,43.1333317991095"
+              Start="0,0"
+              End="81.4166652945181,35.6333317991095">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5666658995547" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.5666658995547"
+                    Point2="0,21.5666658995547"
+                    Point3="4,21.5666658995547" />
+                  <mssgle:LineSegment
+                    End="77.4166652945181,21.5666658995547" />
+                  <mssgle:CubicBezierSegment
+                    Point1="77.4166652945181,21.5666658995547"
+                    Point2="81.4166652945181,21.5666658995547"
+                    Point3="81.4166652945181,25.5666658995547" />
+                  <mssgle:LineSegment
+                    End="81.4166652945181,35.6333317991095" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Execute SQL Task 2"
+          TopLeft="308.854162064381,375.916659944753" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 4]"
+          TopLeft="263.749997212241,342.099994645715">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="132.437498185474,33.8166652990383"
+              Start="0,0"
+              End="132.437498185474,26.3166652990383">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,12.9083326495191" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,12.9083326495191"
+                    Point2="0,16.9083326495191"
+                    Point3="4,16.9083326495191" />
+                  <mssgle:LineSegment
+                    End="128.437498185474,16.9083326495191" />
+                  <mssgle:CubicBezierSegment
+                    Point1="128.437498185474,16.9083326495191"
+                    Point2="132.437498185474,16.9083326495191"
+                    Point3="132.437498185474,20.9083326495191" />
+                  <mssgle:LineSegment
+                    End="132.437498185474,26.3166652990383" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="206.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\WineReviewsDataSet table"
+          TopLeft="224.166666666667,15.5" />
+        <NodeLayout
+          Size="122.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\Multicast"
+          TopLeft="239.333333333333,100" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="327.5,58.1666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-26.8333333333333,41.8333333333334"
+              Start="0,0"
+              End="-26.8333333333333,34.3333333333334">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.9166666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.9166666666667"
+                    Point2="0,20.9166666666667"
+                    Point3="-4,20.9166666666667" />
+                  <mssgle:LineSegment
+                    End="-22.8333333333333,20.9166666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-22.8333333333333,20.9166666666667"
+                    Point2="-26.8333333333333,20.9166666666667"
+                    Point3="-26.8333333333333,24.9166666666667" />
+                  <mssgle:LineSegment
+                    End="-26.8333333333333,34.3333333333334" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="150.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\WineDim table"
+          TopLeft="76.1666666666666,206.166666666667" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 1]"
+          TopLeft="281.555555555555,142.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-130.055555555556,63.4999999999999"
+              Start="0,0"
+              End="-130.055555555556,55.9999999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,21.8905579399141" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,21.8905579399141"
+                    Point2="0,25.8905579399141"
+                    Point3="-4,25.8905579399141" />
+                  <mssgle:LineSegment
+                    End="-126.055555555556,25.8905579399141" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-126.055555555556,25.8905579399141"
+                    Point2="-130.055555555556,25.8905579399141"
+                    Point3="-130.055555555556,29.8905579399141" />
+                  <mssgle:LineSegment
+                    End="-130.055555555556,55.9999999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="169.333333333334,42.6666666666667"
+          Id="Package\Data Flow Task\ReviewerDim table"
+          TopLeft="243.5,203.5" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 3]"
+          TopLeft="300.666666666667,142.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="27.5000000000001,60.8333333333333"
+              Start="0,0"
+              End="27.5000000000001,53.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.4166666666666" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,26.4166666666666"
+                    Point2="0,30.4166666666666"
+                    Point3="4,30.4166666666666" />
+                  <mssgle:LineSegment
+                    End="23.5000000000001,30.4166666666666" />
+                  <mssgle:CubicBezierSegment
+                    Point1="23.5000000000001,30.4166666666666"
+                    Point2="27.5000000000001,30.4166666666666"
+                    Point3="27.5000000000001,34.4166666666666" />
+                  <mssgle:LineSegment
+                    End="27.5000000000001,53.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="166.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\LocationDim table"
+          TopLeft="433.5,198.833333333333" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 2]"
+          TopLeft="329.333333333333,142.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="187.5,56.1666666666666"
+              Start="0,0"
+              End="187.5,48.6666666666666">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.5189125295508" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,15.5189125295508"
+                    Point2="0,19.5189125295508"
+                    Point3="4,19.5189125295508" />
+                  <mssgle:LineSegment
+                    End="183.5,19.5189125295508" />
+                  <mssgle:CubicBezierSegment
+                    Point1="183.5,19.5189125295508"
+                    Point2="187.5,19.5189125295508"
+                    Point3="187.5,23.5189125295508" />
+                  <mssgle:LineSegment
+                    End="187.5,48.6666666666666" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\ReviewerDim table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\WineDim table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\LocationDim table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\WineReviewsDataSet table">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Load data">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="165.333333333334,42.6666666666667"
+          Id="Package\Load data\WineReviews CSV"
+          TopLeft="47.5,2.83333333333334" />
+        <NodeLayout
+          Size="190.666666666667,42.6666666666667"
+          Id="Package\Load data\ADO NET Destination 1"
+          TopLeft="160,139.333333333333" />
+        <NodeLayout
+          Size="181.333333333334,42.6666666666667"
+          Id="Package\Load data\ADO NET Destination"
+          TopLeft="396.666666666667,182" />
+        <NodeLayout
+          Size="145.333333333334,42.6666666666667"
+          Id="Package\Load data\CountriesCSV"
+          TopLeft="319.5,12.8333333333333" />
+        <EdgeLayout
+          Id="Package\Load data.Paths[Flat File Source Output1]"
+          TopLeft="130.166666666667,45.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="125.166666666667,93.8333333333333"
+              Start="0,0"
+              End="125.166666666667,86.3333333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,42.9166666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,42.9166666666667"
+                    Point2="0,46.9166666666667"
+                    Point3="4,46.9166666666667" />
+                  <mssgle:LineSegment
+                    End="121.166666666667,46.9166666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="121.166666666667,46.9166666666667"
+                    Point2="125.166666666667,46.9166666666667"
+                    Point3="125.166666666667,50.9166666666667" />
+                  <mssgle:LineSegment
+                    End="125.166666666667,86.3333333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load data.Paths[Flat File Source Output]"
+          TopLeft="392.166666666667,55.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="95.1666666666667,126.5"
+              Start="0,0"
+              End="95.1666666666667,119">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,59.25"
+                    Point2="0,63.25"
+                    Point3="4,63.25" />
+                  <mssgle:LineSegment
+                    End="91.1666666666667,63.25" />
+                  <mssgle:CubicBezierSegment
+                    Point1="91.1666666666667,63.25"
+                    Point2="95.1666666666667,63.25"
+                    Point3="95.1666666666667,67.25" />
+                  <mssgle:LineSegment
+                    End="95.1666666666667,119" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load data\ADO NET Destination 1">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load data\ADO NET Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
