@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="20"
-  DTS:VersionGUID="{ED375FA2-4AD6-48E6-94A0-B5E435DD22CE}">
+  DTS:VersionBuild="22"
+  DTS:VersionGUID="{0FEDAC91-393E-495A-A595-3FBC00BC2BEE}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -622,6 +622,118 @@
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\Slowly Changing Dimension"
+              componentClassID="Microsoft.SCD"
+              contactInfo="Slowly Changing Dimension;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Updates a SQL Server Analysis Services data warehouse dimension. Update dimension records that are already present and  insert dimension records that aren't. For example, update the DimProduct table of the AdventureWorksDW OLAP database with data from the Products table in the AdventureWorks OLTP database."
+              name="Slowly Changing Dimension"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SELECT statement used to create a schema rowset."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
+                  name="CurrentRowWhere"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether historical attribute updates are directed to the transformation output for changing attribute updates."
+                  name="UpdateChangingAttributeHistory">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when columns with fixed attributes contain changes."
+                  name="FailOnFixedAttributeChange">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the column name for the inferred member."
+                  name="InferredMemberIndicator"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether inferred member updates are detected."
+                  name="EnableInferredMember">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when a lookup of an existing record fails."
+                  name="FailOnLookupFailure">false</property>
+                <property
+                  dataType="System.UInt32"
+                  description="Specifies that all rows in the input are new or the transformation detects the change type."
+                  name="IncomingRowChangeType"
+                  typeConverter="IncomingRowChangeType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\Slowly Changing Dimension.Connections[LookupConnection]"
+                  description="Defines the connection to use for lookups in the dimension table"
+                  name="LookupConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+                  name="Slowly Changing Dimension Input">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Slowly Changing Dimension.Outputs[Unchanged Output]"
+                  description="Unchanged rows"
+                  exclusionGroup="1"
+                  name="Unchanged Output"
+                  synchronousInputId="Package\Data Flow Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Slowly Changing Dimension.Outputs[New Output]"
+                  description="New rows"
+                  exclusionGroup="1"
+                  name="New Output"
+                  synchronousInputId="Package\Data Flow Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Slowly Changing Dimension.Outputs[Fixed Attribute Output]"
+                  description="Rows with changes in columns tagged FixedAttribute"
+                  exclusionGroup="1"
+                  name="Fixed Attribute Output"
+                  synchronousInputId="Package\Data Flow Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Slowly Changing Dimension.Outputs[Changing Attribute Updates Output]"
+                  description="These rows contain new information for ChangingAttribute (Type 1) column changes"
+                  exclusionGroup="1"
+                  name="Changing Attribute Updates Output"
+                  synchronousInputId="Package\Data Flow Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]"
+                  description="HistoricalAttribute (Type 2) changes result in these new rows"
+                  exclusionGroup="2"
+                  name="Historical Attribute Inserts Output"
+                  synchronousInputId="Package\Data Flow Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Slowly Changing Dimension.Outputs[Inferred Member Updates Output]"
+                  description="Information to update unpopulated initial dimension row"
+                  exclusionGroup="1"
+                  name="Inferred Member Updates Output"
+                  synchronousInputId="Package\Data Flow Task\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
                   <externalMetadataColumns />
                 </output>
               </outputs>
@@ -2499,6 +2611,10 @@
           Id="Package\Execute SQL Task 1"
           TopLeft="94.9999985843897,213.633329513272" />
         <NodeLayout
+          Size="174.666666666667,42.6666666666667"
+          Id="Package\Execute SQL Task 2"
+          TopLeft="308.854162064381,375.916659944753" />
+        <NodeLayout
           Size="128,42.6666666666667"
           Id="Package\Load data"
           TopLeft="62.7916658129543,77.5416653784613" />
@@ -2530,26 +2646,26 @@
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="27.9583331129203,24.0916653745867"
+              EndConnector="27.9583331129204,24.091665374587"
               Start="0,0"
-              End="27.9583331129203,16.5916653745867">
+              End="27.9583331129204,16.591665374587">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,8.04583268729336" />
+                    End="0,8.04583268729351" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,8.04583268729336"
-                    Point2="0,12.0458326872934"
-                    Point3="4,12.0458326872934" />
+                    Point1="0,8.04583268729351"
+                    Point2="0,12.0458326872935"
+                    Point3="4,12.0458326872935" />
                   <mssgle:LineSegment
-                    End="23.9583331129203,12.0458326872934" />
+                    End="23.9583331129204,12.0458326872935" />
                   <mssgle:CubicBezierSegment
-                    Point1="23.9583331129203,12.0458326872934"
-                    Point2="27.9583331129203,12.0458326872934"
-                    Point3="27.9583331129203,16.0458326872934" />
+                    Point1="23.9583331129204,12.0458326872935"
+                    Point2="27.9583331129204,12.0458326872935"
+                    Point3="27.9583331129204,16.0458326872935" />
                   <mssgle:LineSegment
-                    End="27.9583331129203,16.5916653745867" />
+                    End="27.9583331129204,16.591665374587" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2560,20 +2676,20 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="154.749998925875,186.966664086381">
+          TopLeft="154.749998925875,186.966664086382">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="27.5833329918484,26.6666654268904"
+              EndConnector="27.5833329918484,26.6666654268903"
               Start="0,0"
-              End="27.5833329918484,19.1666654268904">
+              End="27.5833329918484,19.1666654268903">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,9.33333271344522" />
+                    End="0,9.33333271344517" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,9.33333271344522"
+                    Point1="0,9.33333271344517"
                     Point2="0,13.3333327134452"
                     Point3="4,13.3333327134452" />
                   <mssgle:LineSegment
@@ -2583,7 +2699,7 @@
                     Point2="27.5833329918484,13.3333327134452"
                     Point3="27.5833329918484,17.3333327134452" />
                   <mssgle:LineSegment
-                    End="27.5833329918484,19.1666654268904" />
+                    End="27.5833329918484,19.1666654268903" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2626,10 +2742,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="174.666666666667,42.6666666666667"
-          Id="Package\Execute SQL Task 2"
-          TopLeft="308.854162064381,375.916659944753" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
           TopLeft="263.749997212241,342.099994645715">
@@ -2673,6 +2785,10 @@
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="169.333333333334,42.6666666666667"
+          Id="Package\Data Flow Task\ReviewerDim table"
+          TopLeft="243.5,203.5" />
+        <NodeLayout
           Size="206.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\WineReviewsDataSet table"
           TopLeft="224.166666666667,15.5" />
@@ -2680,44 +2796,14 @@
           Size="122.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Multicast"
           TopLeft="239.333333333333,100" />
-        <EdgeLayout
-          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="327.5,58.1666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-26.8333333333333,41.8333333333334"
-              Start="0,0"
-              End="-26.8333333333333,34.3333333333334">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,16.9166666666667" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,16.9166666666667"
-                    Point2="0,20.9166666666667"
-                    Point3="-4,20.9166666666667" />
-                  <mssgle:LineSegment
-                    End="-22.8333333333333,20.9166666666667" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-22.8333333333333,20.9166666666667"
-                    Point2="-26.8333333333333,20.9166666666667"
-                    Point3="-26.8333333333333,24.9166666666667" />
-                  <mssgle:LineSegment
-                    End="-26.8333333333333,34.3333333333334" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
         <NodeLayout
           Size="150.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\WineDim table"
           TopLeft="76.1666666666666,206.166666666667" />
+        <NodeLayout
+          Size="166.666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\LocationDim table"
+          TopLeft="433.5,198.833333333333" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Multicast Output 1]"
           TopLeft="281.555555555555,142.666666666667">
@@ -2752,19 +2838,49 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="169.333333333334,42.6666666666667"
-          Id="Package\Data Flow Task\ReviewerDim table"
-          TopLeft="243.5,203.5" />
         <EdgeLayout
-          Id="Package\Data Flow Task.Paths[Multicast Output 3]"
-          TopLeft="300.666666666667,142.666666666667">
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="327.5,58.1666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="27.5000000000001,60.8333333333333"
+              EndConnector="-26.8333333333333,41.8333333333334"
               Start="0,0"
-              End="27.5000000000001,53.3333333333333">
+              End="-26.8333333333333,34.3333333333334">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,16.9166666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,16.9166666666667"
+                    Point2="0,20.9166666666667"
+                    Point3="-4,20.9166666666667" />
+                  <mssgle:LineSegment
+                    End="-22.8333333333333,20.9166666666667" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-22.8333333333333,20.9166666666667"
+                    Point2="-26.8333333333333,20.9166666666667"
+                    Point3="-26.8333333333333,24.9166666666667" />
+                  <mssgle:LineSegment
+                    End="-26.8333333333333,34.3333333333334" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Multicast Output 3]"
+          TopLeft="295.333333333333,142.666666666667">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="32.8333333333341,60.8333333333333"
+              Start="0,0"
+              End="32.8333333333341,53.3333333333333">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -2775,13 +2891,13 @@
                     Point2="0,30.4166666666666"
                     Point3="4,30.4166666666666" />
                   <mssgle:LineSegment
-                    End="23.5000000000001,30.4166666666666" />
+                    End="28.8333333333341,30.4166666666666" />
                   <mssgle:CubicBezierSegment
-                    Point1="23.5000000000001,30.4166666666666"
-                    Point2="27.5000000000001,30.4166666666666"
-                    Point3="27.5000000000001,34.4166666666666" />
+                    Point1="28.8333333333341,30.4166666666666"
+                    Point2="32.8333333333341,30.4166666666666"
+                    Point3="32.8333333333341,34.4166666666666" />
                   <mssgle:LineSegment
-                    End="27.5000000000001,53.3333333333333" />
+                    End="32.8333333333341,53.3333333333333" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -2790,10 +2906,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="166.666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\LocationDim table"
-          TopLeft="433.5,198.833333333333" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Multicast Output 2]"
           TopLeft="329.333333333333,142.666666666667">
@@ -2828,6 +2940,10 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="212,42.6666666666667"
+          Id="Package\Data Flow Task\Slowly Changing Dimension"
+          TopLeft="220.448538594144,288.099997318983" />
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -2887,7 +3003,7 @@
     design-time-name="Package\Load data">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="165.333333333334,42.6666666666667"
           Id="Package\Load data\WineReviews CSV"
@@ -2935,9 +3051,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -2971,9 +3085,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
