@@ -89,3 +89,33 @@ CREATE TABLE	[dbo].[DimDate]
 		[IsHolidayUK] BIT Null,-- Flag 1=National Holiday, 0-No National Holiday
 		[HolidayUK] VARCHAR(50) Null --Name of Holiday in UK
 	)
+
+
+create table Facts
+(
+	WineId int not null,
+	ReviewerId int not null,
+	ReviewId int not null,
+	LocationId int not null,
+	DateId int not null,
+	Points int,
+	NumberOfReviews int,
+	Price int
+)
+
+
+create view LocationDimSmallerStrings
+as
+select LocationId,cast(country as varchar(1000)) as country,cast(province as varchar(1000)) as province,cast(region as varchar(1000)) as region
+from LocationDim
+
+
+alter view ReviewerDimSmallerStrings
+as
+select ReviewerId,cast(taster_name as varchar(100)) as taster_name
+from ReviewerDim
+
+create view WineDimSmallerStrings
+as
+select WineId,cast(description as varchar(2000)) as description,cast(designation as varchar(100)) as designation,cast(variety as varchar(100)) as variety,cast(winery as varchar(1000)) as winery
+from WineDim
