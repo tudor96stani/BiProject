@@ -100,7 +100,8 @@ create table Facts
 	DateId int not null,
 	Points int,
 	NumberOfReviews int,
-	Price int
+	Price int,
+	DateWhenCounted date
 )
 
 
