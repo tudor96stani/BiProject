@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="2" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1408" scrolltop="-6139" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="5856" y="14870" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1408" scrolltop="-6139" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="7549" y="8996" backcolor="2434342" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="01000000900180380100065461686f6d61" />
             </font>
@@ -19,7 +19,7 @@
           <layoutmanager>
             <ddsxmlobj />
           </layoutmanager>
-          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="LocationDim" left="20" top="0" logicalid="1" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2593" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="LocationDim" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2593" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
             <control>
               <ddsxmlobjectstreaminitwrapper binary="000c0000b80b0000210a0000" />
             </control>
@@ -88,15 +88,15 @@
               </Attributes>
               <Position x="340" y="20" />
             </Shape>
-            <Shape Id="Region" Expanded="false">
-              <Attributes>
-                <Attribute Id="Region" />
-              </Attributes>
-              <Position x="500" y="20" />
-            </Shape>
             <Shape Id="Province" Expanded="false">
               <Attributes>
                 <Attribute Id="Province" />
+              </Attributes>
+              <Position x="500" y="20" />
+            </Shape>
+            <Shape Id="Region" Expanded="false">
+              <Attributes>
+                <Attribute Id="Region" />
               </Attributes>
               <Position x="660" y="20" />
             </Shape>
@@ -152,10 +152,18 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="cdb7506c-fb03-4a83-833a-559d184143e1">
+        <DataType>WChar</DataType>
+        <DataSize>2147483647</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="65b52d5c-80be-4af6-95d8-75cdf34b004d">
+          <TableID>dbo_LocationDim</TableID>
+          <ColumnID>country</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="6d635fa6-9915-44b2-8926-84cede481572">
-          <AttributeID>Region</AttributeID>
-          <Name>Region</Name>
+        <AttributeRelationship dwd:design-time-name="c63fed17-0ad5-4d3a-9db5-aef9f5ffab02">
+          <AttributeID>Province</AttributeID>
+          <Name>Province</Name>
         </AttributeRelationship>
       </AttributeRelationships>
       <OrderBy>Key</OrderBy>
@@ -181,6 +189,20 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="b131b5f5-a0c0-4b4b-b82e-7d01809820f2">
+        <DataType>WChar</DataType>
+        <DataSize>2147483647</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="5f842769-d863-458e-b90a-ab6332eac251">
+          <TableID>dbo_LocationDim</TableID>
+          <ColumnID>province</ColumnID>
+        </Source>
+      </NameColumn>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f553f89b-ebfd-4a5b-9a50-aa23377f3144">
+          <AttributeID>Region</AttributeID>
+          <Name>Region</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
       <OrderBy>Key</OrderBy>
       <ValueColumn dwd:design-time-name="96d5392b-83db-498a-8424-f08cc99bc54d">
         <DataType>Binary</DataType>
@@ -204,12 +226,14 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="280357d5-b11d-4cd0-b9bc-13a7ec104b43">
-          <AttributeID>Province</AttributeID>
-          <Name>Province</Name>
-        </AttributeRelationship>
-      </AttributeRelationships>
+      <NameColumn dwd:design-time-name="7466379e-acbe-43be-9cfe-8c284ea8e795">
+        <DataType>WChar</DataType>
+        <DataSize>2147483647</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="0e39ac0e-28c3-43fd-9b45-a4bc7134c9ec">
+          <TableID>dbo_LocationDim</TableID>
+          <ColumnID>region</ColumnID>
+        </Source>
+      </NameColumn>
       <OrderBy>Key</OrderBy>
       <ValueColumn dwd:design-time-name="51f995f0-81f1-436f-89a0-d3a6e9cd1897">
         <DataType>Binary</DataType>
@@ -233,6 +257,14 @@
           </Source>
         </KeyColumn>
       </KeyColumns>
+      <NameColumn dwd:design-time-name="a9acac2f-82d9-4942-90b7-f43229b0b14f">
+        <DataType>WChar</DataType>
+        <DataSize>2147483647</DataSize>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="24704aad-71dc-483b-8793-6efaff00b48b">
+          <TableID>dbo_LocationDim</TableID>
+          <ColumnID>continent</ColumnID>
+        </Source>
+      </NameColumn>
       <AttributeRelationships>
         <AttributeRelationship dwd:design-time-name="a3c6a349-ac66-4a21-8c71-897a915c534e">
           <AttributeID>Country</AttributeID>
@@ -256,15 +288,15 @@
       <ID>Hierarchy</ID>
       <Name>Hierarchy</Name>
       <Levels>
-        <Level dwd:design-time-name="c3328c9f-ea45-4dfc-a492-b942c4106364">
-          <ID>Province</ID>
-          <Name>Province</Name>
-          <SourceAttributeID>Province</SourceAttributeID>
-        </Level>
         <Level dwd:design-time-name="ec51ada4-b55d-4b9a-b23f-e6b3eac50b0d">
           <ID>Region</ID>
           <Name>Region</Name>
           <SourceAttributeID>Region</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="c3328c9f-ea45-4dfc-a492-b942c4106364">
+          <ID>Province</ID>
+          <Name>Province</Name>
+          <SourceAttributeID>Province</SourceAttributeID>
         </Level>
         <Level dwd:design-time-name="df316a87-1cb4-4d39-a015-17e1f53f4fa8">
           <ID>Country</ID>

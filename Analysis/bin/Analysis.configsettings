@@ -27,7 +27,7 @@
     </Dimensions>
     <Cubes>
       <Cube>
-        <ID>Wines Cube</ID>
+        <ID>WineCube4</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>Facts</ID>

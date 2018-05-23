@@ -8,12 +8,12 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>Wines Cube.cube</Name>
-      <FullPath>Wines Cube.cube</FullPath>
+      <Name>WineCube4.cube</Name>
+      <FullPath>WineCube4.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Wines Cube.partitions</Name>
-          <FullPath>Wines Cube.partitions</FullPath>
+          <Name>WineCube4.partitions</Name>
+          <FullPath>WineCube4.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>
